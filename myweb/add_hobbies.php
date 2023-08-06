@@ -1,7 +1,7 @@
 
 <?php
 // เชื่อมต่อกับฐานข้อมูล
-$servername = "localhost";
+$servername = "mariadb";
 $username = "anianima";
 $password = "my2jzy1t";
 $dbname = "my_hobbies";
