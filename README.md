@@ -23,7 +23,7 @@ topology ของระบบ
 index.php เป็น static web แสดงข้อมูลต่างๆในภาพรวม ใช้วิธีการ include ('navbar.php') มาแสดงเมนู และ include ('footer.php') แสดงส่วน footer ของเว็บไซต์
 ------------- โดยทุกหน้าจะเรียกเหมือนกันคือ include(navbar.php) , include(footer.php); ที่แตกต่างกันจะเป็นส่วน contence ใน page
 about.php ใช้ html css bootstrap แสดงข้อมูลส่วนตัว
-hobbies.php สร้าง form ให้สามารถ add hobbies โดยอ้างถึง action จาก add_hobbies.php ให้ช่วยในการเพิ่มข้อมูล 
+hobbies.php สร้าง form ให้สามารถ add hobbies โดยอ้างถึง action จาก add_hobbies.php ให้ช่วยในการเพิ่มข้อมูล <br />
 |------------- ใช้การ include หน้า hobbies1.php มาแสดง 
 |--------------------------- หน้า hobbies1.php ใช้คำสั่งเชื่อมต่อกับฐานข้อมูล ให้ดึงข้อมูลมาแสดง 
 |---------------------------------------------edit จากเมนูในหน้า hobbies1.php โดยอ้างถึง action จาก edit_hobbies.php โดยใช้ ลำดับ (sequence) เป็นเงื่อนไขการแก้ไข
