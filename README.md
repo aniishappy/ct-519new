@@ -50,12 +50,12 @@ db: #เป็นการระบุ container ที่จะต้องใ�
 การ deploy ตัว code มาทำงาน
 1.สร้างเว็บและ sql ให้เรียบร้อย พร้อมทั้ง dockerfile และ docker-compose.yaml
 2.เตรียม git ให้พร้อม
-3.สร้าง repositories ct519-Myhobbies
-4.อัพโหลด 1 ขึ้น repositories ct519-Myhobbies
-5.ใน Aws install docker engine ให้เรียบร้อย
-6.ใน Aws install docker compose ให้เรียบร้อย
+3.สร้าง repositories ct-519new
+4.อัพโหลด 1 ขึ้น repositories ct-519new
+5.ใน Aws install docker engine
+6.ใน Aws install docker compose 
 7.ใน command line git clone https://github.com/aniishappy/ct-519new
-8.cd ct519-Myhobbies
+8.cd ct-519new
 9.chmod -R 777 all file and folder
 10.docker-compose up --build
 -------------------- กรณีทำผิดพลาดให้กลับไปแก้
