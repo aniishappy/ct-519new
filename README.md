@@ -36,7 +36,7 @@ edit จากเมนูในหน้า hobbies1.php โดยอ้าง�
 
 deletet จากเมนูในหน้า hobbies1.php โดยอ้างถึง action จาก delete_hobbies.php โดยใช้ ลำดับ (sequence) เป็นเงื่อนไขการลบ
 
-research.php หน้านี้จะเป็น html css bootstrap \n
+research.php หน้านี้จะเป็น html css bootstrap
 
 
 
@@ -45,7 +45,7 @@ research.php หน้านี้จะเป็น html css bootstrap \n
 
 version: '3' # เป็นการระบุว่าเราจะใช้ Compose file เวอร์ชั่นไหน services: # เป็นการระบุ container ที่จะต้องใช้ มี 2 container คือ web and db web: build: #สั่งให้ใช้ image ที่สร้างจาก Dockerfile context: ./myweb #path ไปที่ folder myweb dockerfile: Dockerfile # เรียกใช้ Dockerfile container_name: myweb # กำหนดชื่อ container ports: - "80:80" #map port 80 จาก ec2 ไป 80 docker volumes: - ./myweb:/var/www/html #สร้างพื้นที่การทำงานโดยให้ myweb ทำงานที่ /var/www/html
 
-db: #เป็นการระบุ container ที่จะต้องใช้ container คือ db image: mariadb:10.4 #สั่งให้ใช้ image ที่ชื่อ mariadb:10.4 container_name: mariadb #ตั้งชื่อ container ว่า mariadb environment: # ตั้งค่าสภาพแวดล้อม MYSQL_ROOT_PASSWORD: #root กำหนด superuser คือ root MYSQL_DATABASE: myhobbies # กำหนด database name คือ myhobbies MYSQL_USER: kittinun # กำหนด database uses คือ kittinun MYSQL_PASSWORD: 65130695 # กำหนด database password คือ 65130695 volumes: - ./mysql:/docker-entrypoint-initdb.d # กำหนดให้ใช้สภาพแวดล้อมใน folder mysql โดยมี sql create table and insert data ports: - "3306:3306" #map port 80 จาก ec2 ไป 80 docker volumes: db_data:
+db: #เป็นการระบุ container ที่จะต้องใช้ container คือ db image: mariadb:10.4 #สั่งให้ใช้ image ที่ชื่อ mariadb:10.4 container_name: mariadb #ตั้งชื่อ container ว่า mariadb environment: # ตั้งค่าสภาพแวดล้อม MYSQL_ROOT_PASSWORD: root กำหนด MYSQL_DATABASE: my_hobbies # กำหนด MYSQL_USER: anianima  volumes: - ./mysql:/docker-entrypoint-initdb.d  กำหนดให้ใช้สภาพแวดล้อมใน folder mysql โดยมี sql create table and insert data ports: - "3306:3306" map port 80 จาก ec2 ไป 80 docker volumes: db_data:
 
 การ deploy ตัว code มาทำงาน
 1.สร้างเว็บและ sql ให้เรียบร้อย พร้อมทั้ง dockerfile และ docker-compose.yaml
