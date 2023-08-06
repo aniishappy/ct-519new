@@ -58,7 +58,8 @@ db: รระบุ container คือ db image: mariadb:10.4 #สั่งใ�
 8.cd ct-519new
 9.chmod -R 777 all file and folder
 10.docker-compose up --build
+
 กรณีทำผิดพลาดให้กลับไปแก้
-1.sudo docker stop $(sudo docker ps -aq)
-2.sudo docker rm $(sudo docker ps -aq)
-3.ไปขั้นตอนที่ 7-11 ใหม่
+sudo docker stop $(sudo docker ps -aq)
+sudo docker rm $(sudo docker ps -aq)
+ไปขั้นตอนที่ 7-11 ใหม่
