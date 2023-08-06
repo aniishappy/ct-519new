@@ -14,16 +14,17 @@ topology ของระบบ
 
 การอธิบายส่วนของ code ที่สำคัญ 
 จะเป็นด้านการทำระบบหลังบ้าน 
-โดยเว็บประกอบด้วย 
-index.php เป็น static web แสดงข้อมูลต่างๆในภาพรวม ใช้วิธีการ include ('navbar.php') มาแสดงเมนู และ include ('footer.php') แสดงส่วน footer ของเว็บไซต์ 
-------------- โดยทุกหน้าจะเรียกเหมือนกันคือ include(navbar.php) , include(footer.php); ที่แตกต่างกันจะเป็นส่วน contence ใน page 
-about.php ใช้ html css bootstrap แสดงข้อมูลส่วนตัว 
-hobbies.php สร้าง form ให้สามารถ add hobbies โดยอ้างถึง action จาก add_hobbies.php ให้ช่วยในการเพิ่มข้อมูล 
-|------------- ใช้การ include หน้า hobbies1.php มาแสดง 
-|--------------------------- หน้า hobbies1.php ใช้คำสั่งเชื่อมต่อกับฐานข้อมูล ให้ดึงข้อมูลมาแสดง  
-|---------------------------------------------edit จากเมนูในหน้า hobbies1.php โดยอ้างถึง action จาก edit_hobbies.php โดยใช้ ลำดับ (sequence) เป็นเงื่อนไขการแก้ไข 
-|---------------------------------------------deletet จากเมนูในหน้า hobbies1.php โดยอ้างถึง action จาก delete_hobbies.php โดยใช้ ลำดับ (sequence) เป็นเงื่อนไขการลบ 
-research.php หน้านี้จะเป็น html css bootstrap 
+โดยเว็บประกอบด้วย \n
+index.php เป็น static web แสดงข้อมูลต่างๆในภาพรวม ใช้วิธีการ include ('navbar.php') มาแสดงเมนู และ include ('footer.php') แสดงส่วน footer ของเว็บไซต์ \n
+------------- โดยทุกหน้าจะเรียกเหมือนกันคือ include(navbar.php) , include(footer.php); ที่แตกต่างกันจะเป็นส่วน contence ใน page \n
+about.php ใช้ html css bootstrap แสดงข้อมูลส่วนตัว \n
+hobbies.php สร้าง form ให้สามารถ add hobbies โดยอ้างถึง action จาก add_hobbies.php ให้ช่วยในการเพิ่มข้อมูล \n
+|------------- ใช้การ include หน้า hobbies1.php มาแสดง \n
+|--------------------------- หน้า hobbies1.php ใช้คำสั่งเชื่อมต่อกับฐานข้อมูล ให้ดึงข้อมูลมาแสดง  \n
+|---------------------------------------------edit จากเมนูในหน้า hobbies1.php โดยอ้างถึง action จาก edit_hobbies.php โดยใช้ ลำดับ (sequence) เป็นเงื่อนไขการแก้ไข \n
+|---------------------------------------------deletet จากเมนูในหน้า hobbies1.php โดยอ้างถึง action จาก delete_hobbies.php โดยใช้ ลำดับ (sequence) เป็นเงื่อนไขการลบ \n
+research.php หน้านี้จะเป็น html css bootstrap \n
+
 
 การเตรียมการระบบ Cloud 
 เป็นการใช้ ec2 โดยใช้ aws linux ในการทำ และ install docker environment รวมถึง git เพื่อ clone data มาเพื่อ deploy
